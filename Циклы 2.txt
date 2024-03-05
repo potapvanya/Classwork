@@ -1,4 +1,4 @@
-№1
+В№1
 import re
 random_string = 'f1ix_ER8ROR_in_l1ine_&_an7d_B8UG._in_C61o0de!'
 letters_only = re.sub(r'[^a-zA-Z]', '', random_string)
@@ -6,7 +6,7 @@ underscore_to_space = re.sub('_', ' ', letters_only)
 correct_string = re.sub(r'\s+', ' ', underscore_to_space)
 print(correct_string)
 
-№2
+В№2
 def count_vowels(input_string):
     vowels = 'aeiouAEIOU'
     count = 0
@@ -15,11 +15,11 @@ def count_vowels(input_string):
             count += 1
     return count
 
-input_string = input("Введите произвольную строку: ")
+input_string = input("Г‚ГўГҐГ¤ГЁГІГҐ ГЇГ°Г®ГЁГ§ГўГ®Г«ГјГ­ГіГѕ Г±ГІГ°Г®ГЄГі: ")
 vowels_count = count_vowels(input_string)
-print(f"Количество гласных букв в строке: {vowels_count}")
+print(f"ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЈГ«Г Г±Г­Г»Гµ ГЎГіГЄГў Гў Г±ГІГ°Г®ГЄГҐ: {vowels_count}")
 
-№3
+В№3
 random_elements = [3, 6, -9, '-5', 'str', list, 'elem', None, -1, 10, str]
 
 count_numerics = 0
@@ -31,22 +31,22 @@ for element in random_elements:
         if element < 0:
             sum_negatives += element
 
-print("Количество числовых элементов в списке:", count_numerics)
-print("Сумма отрицательных чисел в списке:", sum_negatives)
+print("ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г·ГЁГ±Г«Г®ГўГ»Гµ ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Гў Г±ГЇГЁГ±ГЄГҐ:", count_numerics)
+print("Г‘ГіГ¬Г¬Г  Г®ГІГ°ГЁГ¶Г ГІГҐГ«ГјГ­Г»Гµ Г·ГЁГ±ГҐГ« Гў Г±ГЇГЁГ±ГЄГҐ:", sum_negatives)
 
-№4
-n = int(input("Введите число n: "))
+В№4
+n = int(input("Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® n: "))
 
 for i in range(1, 11):
     print(f"i x n-1 = (n-1) * i".rjust(10))
     print(f"i x n = n * i".rjust(10))
     print(f"i x n+1 = (n+1) * i".rjust(10))
 
-№5
+В№5
 sum = 0
 
 while sum <= 50:
-    num = int(input("Введите число: "))
+    num = int(input("Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г®: "))
     sum += num
 
-print("Сумма чисел превысила 50. Программа завершена.")
+print("Г‘ГіГ¬Г¬Г  Г·ГЁГ±ГҐГ« ГЇГ°ГҐГўГ»Г±ГЁГ«Г  50. ГЏГ°Г®ГЈГ°Г Г¬Г¬Г  Г§Г ГўГҐГ°ГёГҐГ­Г .")
