@@ -1,0 +1,52 @@
+№1
+import re
+random_string = 'f1ix_ER8ROR_in_l1ine_&_an7d_B8UG._in_C61o0de!'
+letters_only = re.sub(r'[^a-zA-Z]', '', random_string)
+underscore_to_space = re.sub('_', ' ', letters_only)
+correct_string = re.sub(r'\s+', ' ', underscore_to_space)
+print(correct_string)
+
+№2
+def count_vowels(input_string):
+    vowels = 'aeiouAEIOU'
+    count = 0
+    for char in input_string:
+        if char in vowels:
+            count += 1
+    return count
+
+input_string = input("Введите произвольную строку: ")
+vowels_count = count_vowels(input_string)
+print(f"Количество гласных букв в строке: {vowels_count}")
+
+№3
+random_elements = [3, 6, -9, '-5', 'str', list, 'elem', None, -1, 10, str]
+
+count_numerics = 0
+sum_negatives = 0
+
+for element in random_elements:
+    if isinstance(element, int) and not isinstance(element, bool):
+        count_numerics += 1
+        if element < 0:
+            sum_negatives += element
+
+print("Количество числовых элементов в списке:", count_numerics)
+print("Сумма отрицательных чисел в списке:", sum_negatives)
+
+№4
+n = int(input("Введите число n: "))
+
+for i in range(1, 11):
+    print(f"i x n-1 = (n-1) * i".rjust(10))
+    print(f"i x n = n * i".rjust(10))
+    print(f"i x n+1 = (n+1) * i".rjust(10))
+
+№5
+sum = 0
+
+while sum <= 50:
+    num = int(input("Введите число: "))
+    sum += num
+
+print("Сумма чисел превысила 50. Программа завершена.")
