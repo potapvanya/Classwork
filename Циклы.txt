@@ -1,0 +1,62 @@
+1.
+all_keys = ['red key', 'blue key', 'golden key', 'red key', 'blue key', 'white key', 'golden key']
+
+if 'golden key' in all_keys:
+    count = all_keys.count('golden key')
+    print(True, count)
+else:
+    print(False)
+
+2.
+message = '6_185+_7*/#4i/*(@n'
+decrypted_message = ''
+
+for char in message:
+    if char == '7':
+        decrypted_message += 'П'
+    elif char == '1':
+        decrypted_message += 'Т'
+    elif char == 'n':
+        decrypted_message += '!'
+    elif char == '+':
+        decrypted_message += 'Я'
+    elif char == 'i':
+        decrypted_message += 'И'
+    elif char == '/':
+        decrypted_message += 'Л'
+    elif char == '(':
+        decrypted_message += 'С'
+    elif char == '5':
+        decrypted_message += 'Б'
+    elif char == '6':
+        decrypted_message += 'У'
+    elif char == '-':
+        decrypted_message += ' '
+    elif char == '*':
+        decrypted_message += 'О'
+    elif char == '8':
+        decrypted_message += 'Е'
+    elif char == '#':
+        decrypted_message += 'У'
+    elif char == '4':
+        decrypted_message += 'Ч'
+    elif char == '@':
+        decrypted_message += 'Ь'
+    else:
+        decrypted_message += char
+
+print(decrypted_message)
+
+3.
+if side1_1 <= 0 or side2_1 <= 0 or side1_2 <= 0 or side2_2 <= 0:
+    print("Какая-то из сторон меньше или равна нулю. Повторите ввод!")
+else:
+    area1 = side1_1 * side2_1
+    area2 = side1_2 * side2_2
+    if area1 > area2:
+        print("Первый прямоугольник больше второго")
+    elif area1 < area2:
+        print("Второй прямоугольник больше первого")
+    else:
+        print("Прямоугольники равны по площади")
+    break
